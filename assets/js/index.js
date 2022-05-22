@@ -28,7 +28,6 @@ $(function () {
         layer.msg("获取数据成功");
         renderAvater(res.data);
       },
-      
     });
   }
   const renderAvater = (user) => {
@@ -46,4 +45,7 @@ $(function () {
       $(".text-avatar").html(fiestName);
     }
   };
+  function change() {
+    $("#art_list").addClass("layui-this").next().removeClass("layui-this");
+  }
 });

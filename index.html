@@ -32,8 +32,8 @@
             </dl>
           </li>
           <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
-            <a href="javascript:;"
-             id="bt" ><span class="iconfont icon-tuichu"></span>退出</a
+            <a href="javascript:;" id="btnlogout"
+              ><span class="iconfont icon-tuichu"></span>退出</a
             >
           </li>
         </ul>
@@ -60,17 +60,17 @@
               >
               <dl class="layui-nav-child">
                 <dd>
-                  <a href="javascript:;"
+                  <a href="./article/article_cate.html" target="fm"
                     ><i class="layui-icon layui-icon-app"></i>文章类别</a
                   >
                 </dd>
-                <dd>
-                  <a href="javascript:;"
+                <dd id="art_list">
+                  <a href="./article/article_list.html" target="fm"
                     ><i class="layui-icon layui-icon-app"></i>文章列表</a
                   >
                 </dd>
                 <dd>
-                  <a href="javascript:;"
+                  <a href="/article/article_pub.html" target="fm"
                     ><i class="layui-icon layui-icon-app"></i>发布文章</a
                   >
                 </dd>
@@ -116,5 +116,6 @@
     <script src="./assets/lib/jquery.js"></script>
     <script src="./assets/js/baseAPI.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="/assets/js/article/article_list.js"></script>
   </body>
 </html>
